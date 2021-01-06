@@ -29,6 +29,11 @@ The vdsr is extend from [vdsr](https://github.com/twtygqyy/pytorch-vdsr).
 
 Just copy the file in [my vdsr](./vdsr) and cover the original ones.
 
+### Using msrresnet
+The msrresnet is extend from [msrresnet](https://github.com/cszn/KAIR).
+
+Just copy the file in [my msrresnet](./msrresnet) and cover the original ones.
+
 ### Coding Style
 Use PEP8 guidelines.
 
@@ -65,7 +70,11 @@ Argument
 
 Train in vdsr. (The root is in vdsr)
 
-    $ sh train.sh    
+    $ sh train.sh   
+
+Train in msrresnet. (The root is in msrresnet)
+
+    $ python main_train_msrresnet_psnr.py
 
 ## Inference
 Test in srgan. (The root is in srgan)
@@ -79,6 +88,10 @@ Test in esrgan. (The root is in esrgan)
 Test in vdsr. (The root is in vdsr)
 
     $ sh test.sh
+
+Test in msrresnet. (The root is in msrresnet)
+
+    $ python main_test_msrresnet.py
 
 ## Citation
 ```
@@ -94,5 +107,12 @@ Test in vdsr. (The root is in vdsr)
   title={pytorch-vdsr},
   year={2018},
   url={https://github.com/twtygqyy/pytorch-vdsr},
+}
+
+@misc{github,
+  author={cszn},
+  title={KAIR},
+  year={2020},
+  url={https://github.com/cszn/KAIR},
 }
 ```
